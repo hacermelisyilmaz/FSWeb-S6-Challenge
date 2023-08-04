@@ -1,8 +1,45 @@
+.flex-container {
+  display: flex;
+}
+
 .App {
+  min-height: 100vh;
   text-align: center;
+  color: whitesmoke;
 }
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
 }
-/* write your parent styles in here for your App.js */
+
+.karakterler {
+  flex-direction: column;
+  max-width: 25rem;
+  margin: auto;
+  padding: 0 15vw;
+  gap: 1rem;
+}
+
+.Karakter .char-header {
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  border-radius: 3px;
+  background-color: rgba(71, 25, 7, 0.493);
+}
+
+.Karakter .char-header h2 {
+  display: inline;
+  text-align: left;
+}
+
+.Karakter .char-header h2 i {
+  text-align: right;
+}
+
+.Karakter .char-info {
+  background-color: rgba(71, 25, 7, 0.493);
+  list-style: none;
+  margin: 0;
+  padding: 1rem 0;
+}
